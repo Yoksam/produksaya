@@ -88,7 +88,7 @@
         const message = document.getElementById('message').value;
     
         // Format message for WhatsApp (encode URI to ensure special characters are handled)
-        const whatsappMessage = `Halo, saya ${name} (${email}).\nPesan saya: ${message}\nNo WhatsApp dari Indonesia.`;
+        const whatsappMessage = `Halo, saya ${name} (${email}).\nPesan saya: ${message}\n.`;
     
         // WhatsApp link format
         const whatsappLink = `https://wa.me/+6282145615090?text=${encodeURIComponent(whatsappMessage)}`;
