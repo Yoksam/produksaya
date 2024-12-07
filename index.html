@@ -88,7 +88,7 @@
         const message = document.getElementById('message').value;
     
         // Format message for WhatsApp (encode URI to ensure special characters are handled)
-        const whatsappMessage = `Halo, saya ${name} (${email}).\nPesan saya: ${message}`;
+        const whatsappMessage = `Halo, saya ${name} (${email}).\nPesan saya: ${message}\nNo WhatsApp dari Indonesia.`;
     
         // WhatsApp link format
         const whatsappLink = `https://wa.me/082339476956?text=${encodeURIComponent(whatsappMessage)}`;
@@ -96,7 +96,8 @@
         // Redirect user to WhatsApp with the message
         window.open(whatsappLink, '_blank');
     });
-    </script>
+</script>
+
     
 
     <footer>
